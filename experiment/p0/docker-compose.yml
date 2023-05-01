@@ -1,0 +1,15 @@
+version: '3'
+
+
+services:
+  mavproxy:
+   # add compose equivalent for this "docker run --rm --device=/dev/ttyUSB0 -v $(pwd):/var/log/mavproxy/ --net=host -it asciich/mavproxy /bin/bash -c "run_mavproxy --master=/dev/ttyUSB0,57600""
+   image: sitin/mavproxy
+   privileged: true
+   network_mode: host
+
+   volumes:
+     - ./mavproxy:/var/log/mavproxy/
+   # add command to do this:  /bin/bash -c 'run_mavproxy --master=/dev/ttyUSB0,57600 --out udp:127.0.0.1:14551'. but use docker network instead of localhost
+   command:  --master /dev/ttyUSB0,57600 --out udp:127.0.0.1:14600 --out udp:127.0.0.1:14551
+   tty: true

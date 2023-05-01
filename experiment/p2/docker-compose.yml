@@ -1,0 +1,28 @@
+version: '3'
+
+
+services:
+  mavros-rover:
+    image: basmango/mavros-docker-rover
+    network_mode: host
+    privileged: true
+
+  rosbag-recorder:
+    image: osrf/ros:noetic-desktop-full
+    network_mode: host
+    volumes:
+      - /home/bassam/projects/IBVS/experiment/rosbags:/rosbag
+    # save as date and time
+    command: bash -c 'rosbag record -O /rosbag/$$(date +"%Y-%m-%d-%H-%M-%S").bag  /tracking_error /mavros/setpoint_velocity/cmd_vel /mavros/local_position/pose /estimated_velocity /mavros/local_position/velocity_local /aruco_coordinates'
+    
+  ibvs-solo-controller:
+    image: basmango/ibvs-mavros-controller-node:latest
+    network_mode: host
+  
+  
+  rover-controller:
+    image: basmango/rover-controller:latest
+    network_mode: host
+    depends_on:
+      - mavros-rover
+  

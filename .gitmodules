@@ -1,0 +1,18 @@
+[submodule "images/rover/mavros-docker-rover"]
+	path = images/rover/mavros-docker-rover
+	url = git@github.com:basmango/mavros-docker-rover.git
+[submodule "images/rover/IBVS-rover-controller"]
+	path = images/rover/IBVS-rover-controller
+	url = git@github.com:basmango/IBVS-rover-controller.git
+[submodule "images/drone/IBVS-mavros-controller-node"]
+	path = images/drone/IBVS-mavros-controller-node
+	url = git@github.com:basmango/IBVS-mavros-controller-node.git
+[submodule "images/drone/gstreamer-opencv-ros1-bridge"]
+	path = images/drone/gstreamer-opencv-ros1-bridge
+	url = git@github.com:basmango/gstreamer-opencv-ros1-bridge.git
+[submodule "images/drone/mavros-docker-solo"]
+	path = images/drone/mavros-docker-solo
+	url = git@github.com:basmango/mavros-docker-solo.git
+[submodule "images/drone/aruco-detector-ros"]
+	path = images/drone/aruco-detector-ros
+	url = git@github.com:basmango/aruco-detector-ros.git
