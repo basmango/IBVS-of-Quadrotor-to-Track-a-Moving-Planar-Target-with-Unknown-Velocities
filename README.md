@@ -3,8 +3,9 @@
 This repository contains the code and resources for a project that focuses on using a quadrotor (drone) equipped with a pan-tilt camera to track a moving planar target with unknown velocities. The goal is to implement an Image-Based Visual Servoing (IBVS) scheme for precise target tracking in an outdoor experimental setting.
 
 ## Experimental Setup
+<img src="https://github.com/basmango/IBVS-of-Quadrotor-to-Track-a-Moving-Planar-Target-with-Unknown-Velocities/assets/29100891/41bd9950-7cca-46f3-b2c3-35f5e8c19060" alt="Figure 1" width="700">
 
-The project utilized a 3DR Solo drone with a pan-tilt camera, along with a ground rover equipped with an ArUco marker. The experimental setup is depicted in Figure 1 [INSERT FIGURE 1 HERE]. The drone's Wi-Fi network was utilized to establish a Mavlink interface, enabling access to essential drone information and the transmission of velocity set-points via a mavros node. Additionally, the camera feed was accessed through the drone's Wi-Fi network.
+The project utilized a 3DR Solo drone with a pan-tilt camera, along with a ground rover equipped with an ArUco marker. The experimental setup is depicted in Figure 1 [fig1]. The drone's Wi-Fi network was utilized to establish a Mavlink interface, enabling access to essential drone information and the transmission of velocity set-points via a mavros node. Additionally, the camera feed was accessed through the drone's Wi-Fi network.
 
 The ground rover, with its ArUco marker, served as the target for the quadrotor's tracking. The rover's motion was controlled by mimicking forward and yaw channel transmission commands of a transmitter, resulting in a circular motion with unknown velocities.
 
