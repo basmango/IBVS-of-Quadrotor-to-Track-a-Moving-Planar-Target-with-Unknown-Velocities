@@ -22,16 +22,25 @@ This repository is organized into the following directories:
 
 To reproduce the experiment, follow these steps:
 
-1. Set up the Mavlink interface between the drone and the ground control station using the drone's Wi-Fi network.
+1. Build all docker images in the images directory.
 
-2. Execute the compose script in the `p1` directory to start the necessary nodes for MavROS, ArUco marker detection, and vision.
+2. Power on rover and 3DR solo quadcopter, connect to rover via telemetry and to solo via it's Wi-Fi network.
 
-3. Launch the compose script in the `p2` directory to initiate the movement of the ground rover and activate the IBVS functionality of the quadrotor.
+3. Execute the compose script in the `p0` directory to start mavproxy.
 
-4. Observe the feature tracking error and target inertial velocity estimates, which are represented in Figures 5a and 5b in the accompanying paper [REFERENCE PAPER HERE].
+4. Execute the compose script in the `p1` directory to start the necessary nodes for MavROS, ArUco marker detection, and vision.
+
+5. Launch the compose script in the `p2` directory to initiate the movement of the ground rover and activate the IBVS functionality of the quadrotor.
+
+6. Observe the feature tracking error and target inertial velocity estimates, which are represented in Figures 5a and 5b in the accompanying paper
 
 ## Experimental Results
 
-The experimental results demonstrate the effectiveness of the proposed IBVS scheme for moving target tracking using a quadrotor in an outdoor environment. The convergence of the feature tracking error around the origin indicates the robustness of the system. For a detailed analysis and visual representation of the results, refer to the accompanying paper [REFERENCE PAPER HERE].
+The experimental results demonstrate the effectiveness of the proposed IBVS scheme for moving target tracking using a quadrotor in an outdoor environment. The convergence of the feature tracking error around the origin indicates the robustness of the system.
+
+### Experiment Video
+[![Real-life implementation](https://img.youtube.com/vi/XV5u25d22bo/0.jpg)](https://youtu.be/XV5u25d22bo)
+
+
 
 
