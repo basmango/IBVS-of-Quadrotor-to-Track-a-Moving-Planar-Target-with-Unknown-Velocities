@@ -50,7 +50,7 @@ You can see:
 
 (B) Rover velocity estimates as expected when perfomring circular motion (sinusoidal)
 
-<img src="https://github.com/basmango/IBVS-of-Quadrotor-to-Track-a-Moving-Planar-Target-with-Unknown-Velocities/assets/29100891/fd01a4e0-1705-4863-bf06-f18284f08046" alt="Feature_Error_Exp" width="400">
-<img src="https://github.com/basmango/IBVS-of-Quadrotor-to-Track-a-Moving-Planar-Target-with-Unknown-Velocities/assets/29100891/3444bb24-19be-4617-af86-999df225bc2e" alt="Vel_Est_Exp" width="400">
+<img src="https://github.com/basmango/IBVS-of-Quadrotor-to-Track-a-Moving-Planar-Target-with-Unknown-Velocities/assets/29100891/2deccc53-5d10-4a51-a559-03312ef81812" alt="Feature_Error_Exp" width="400">
+<img src="https://github.com/basmango/IBVS-of-Quadrotor-to-Track-a-Moving-Planar-Target-with-Unknown-Velocities/assets/29100891/95d17f45-86b5-4f2f-a2b3-fb1607e003ab" alt="Vel_Est_Exp" width="400">
 
 
